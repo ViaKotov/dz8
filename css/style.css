@@ -1,72 +1,79 @@
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-
-
-.header__top{
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+.width{
+    max-width: 950px;
+    margin: 0 auto;
 }
 
-.header__top .header__logo, 
-.header__top .header__nav{
-    width: 50%;
+.header__top{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header__top .header__nav .header__nav-menu .header__nav-li{
     display: inline;
-    line-height: 90px;
-    padding: 0px 10px;
-    text-transform: capitalize;
-    font-size: 20px;
+}
+
+.header__top .header__nav .header__nav-menu .header__nav-li:not(:last-child){
+    padding: 0 15px 0 0;
 }
 
 .header__top .header__nav .header__nav-menu .header__nav-li a{
+    display: inline-block;
     text-decoration: none;
     padding: 30px 10px;
     color: rgb(88, 88, 88);
+    border-bottom: solid 3px transparent;
+    text-transform: capitalize;
+    font-size: 18px;
 }
 
-.header__top .header__nav .header__nav-menu .header__nav-li a:hover,
-.header__top .header__nav .header__nav-menu .header__nav-li a:active {
+.header__top .header__nav .header__nav-menu .header__nav-li a:hover{
     text-decoration: none;
-    padding: 30px 10px 31px 10px;
-    border-bottom: solid 3px #5094f2;
+    border-bottom-color: #5094f2;
 }
 
-.header__container .header__product{
+.main__container{
+    margin-bottom: 94px;
+}
+
+.main__container .main__logo{
     background: url('./../images/container-bg.png') no-repeat;
     background-size: 100% auto;
+    margin-bottom: 58px;
+}
+
+.main__container .main__logo .main__product{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.header__container .header__product .header__product-thumb, 
-.header__container .header__product .header__product-text{
+.main__container .main__logo .main__product .main__product-thumb, 
+.main__container .main__logo .main__product .main__product-text{
     color: white;
-    width: 50%;
 }
 
-.header__container .header__product .header__product-thumb .header__product-img{
+.main__container .main__logo .main__product .main__product-thumb .main__product-img{
     margin: 0 auto;
 }
 
-.header__container .header__product .header__product-text .header__product-title{
+.main__container .main__logo .main__product .main__product-text .main__product-title{
     font-size: 36px;
 }
 
-.header__container .header__product .header__product-text .header__product-description{
-    padding: 10px 0;
+.main__container .main__logo .main__product .main__product-text .main__product-description p{
+    line-height: 40px;
+    font-size: 20px;
 }
 
-.header__container .header__product .header__product-text  .header__product-button{
+.main__product-form{
+    margin: 36px 0 0 0;
+}
+
+.main__container .main__logo .main__product .main__product-text  .main__product-button{
     background: url('./../images/btn_bg.png') no-repeat left 10px center;
     background-color: #5094f2;
     border: none;
@@ -78,15 +85,10 @@ body{
     transition: .4s;
 }
 
-.header__container .header__product .header__product-text  .header__product-button:hover{
+.main__container .main__logo .main__product .main__product-text  .main__product-button:hover{
     background-color: #3d72bb;
 }
 
-
-.main__container{
-    width: 100%;
-    padding: 50px;
-}
 
 .main__container .main__blocks{
     display: flex;
@@ -108,7 +110,7 @@ body{
 }
 
 .main__container .main__blocks .main__block .main__block-text .main__block-title{
-    font-size: 24px;
+    font-size: 18px;
     text-transform: capitalize;
     color: #5094f2;
 }
@@ -119,34 +121,28 @@ body{
     padding: 0 30px;
 }
 
-
-.shop__container{
-    padding: 10px 50px;
-}
-
-.shop__container .shop__container-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-
-.shop__container .shop__container-content .shop__content-thumb .shop__content-header{
+.shop__container .shop__content-header{
     text-transform: capitalize;
     font-size: 36px;
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    padding: 0 0 0 27px;
     color: #6f7173;
 }
 
-.shop__container .shop__container-content .shop__content-thumb,
-.shop__container .shop__container-content .shop__content-description
-{
+
+.shop__container .shop__container-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shop__container .shop__container-content .shop__content-thumb, 
+.shop__container .shop__container-content .shop__content-description{
     flex-basis: 50%;
-    align-self: center;
 }
 
 .shop__container .shop__container-content .shop__content-thumb .shop__content-img{
-    margin: 0 auto;
+    padding: 0 0 0 27px;
 }
 
 .shop__container .shop__container-content .shop__content-description .shop__content-title{
@@ -156,16 +152,16 @@ body{
 }
 
 .shop__container .shop__container-content .shop__content-description .shop__content-text{
-    line-height: 24px;
     color: #6f7173;
+    line-height: 32px;
 }
 
-
 .footer__copyright{
-    margin: 10px 0 0 0;
+    margin: 61px 0 0 0;
     height: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-top: solid 1px gray;
 }
 

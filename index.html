@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="header__top">
+        <div class="header__top width">
             <div class="header__logo">
                 <img class="header__logo-img" src="./images/logo.png" alt="Logo" draggable="false">
             </div>
@@ -26,25 +26,29 @@
                 </ul>
             </nav>
         </div>
-        <div class="header__container">
-            <div class="header__product">
-                <div class="header__product-thumb">
-                    <img class="header__product-img" src="./images/iphone.png" alt="Product" draggable="false">
-                </div>
-                <div class="header__product-text">
-                    <div class="header__product-title">Lorem Ipsum is simply</div>
-                    <div class="header__product-description">dummy text of the printing & typesetting </div>
-                    <form>
-                        <input class="header__product-button" type="button" value="Sign up now">
-                    </form>
-                </div>
-            </div>
-        </div>
+        
     </header>
 
     <main>
         <div class="main__container">
-            <div class="main__blocks">
+            <div class="main__logo">
+                <div class="main__product width">
+                    <div class="main__product-thumb">
+                        <img class="main__product-img" src="./images/iphone.png" alt="Product" draggable="false">
+                    </div>
+                    <div class="main__product-text">
+                        <div class="main__product-title">Lorem Ipsum is simply</div>
+                        <div class="main__product-description">
+                            <p>dummy text of the</p>
+                            <p>printing & typesetting</p>
+                        </div>
+                        <form class="main__product-form">
+                            <input class="main__product-button" type="button" value="Sign up now">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main__blocks width">
                 <div class="main__block">
                     <div class="main__block-logo">
                         <img class="main__block-img" src="./images/icon-1.png" alt="IMG1" draggable="false">
@@ -86,10 +90,10 @@
                 </div>
             </div>
         </div>
-        <div class="shop__container">
+        <div class="shop__container width">
+            <div class="shop__content-header">the shopping cart</div>
             <div class="shop__container-content">
                 <div class="shop__content-thumb">
-                    <div class="shop__content-header">the shopping cart</div>
                     <img class="shop__content-img" src="./images/cart.png" alt="Cart" draggable="false">
                 </div>
                 <div class="shop__content-description">
@@ -97,13 +101,13 @@
                         Lorem ipsum dolor sit amet.
                     </div>
                     <div class="shop__content-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, deleniti.
-                        Sequi sit asperiores sunt culpa, minima architecto corporis nulla error!
-                        Ut molestias, a consequuntur quo iusto architecto quasi natus voluptatem.
-                        Mollitia dolorum aliquid deserunt perferendis maxime sint, assumenda totam. Fuga?
-                        Veniam possimus quo vitae minus. Quaerat nam delectus fugiat dolor.
-                        Labore vitae possimus porro facere ea molestias facilis eligendi nemo!
-                        A quos eum quas molestias repellendus illo, inventore repellat. Quidem?
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p>Sequi sit asperiores sunt culpa, minima architecto.</p>
+                        <p>Ut molestias, a consequuntur quo iusto architecto.</p>
+                        <p>Mollitia dolorum aliquid deserunt perferendis. Fuga?</p>
+                        <p>Veniam possimus quo vitae minus. Quaerat.</p>
+                        <p>Labore vitae possimus porro facere ea molestias!</p>
+                        <p>A quos eum quas molestias repellendus illo, inventore?</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +116,7 @@
 
     <footer>
         <div class="footer__copyright">
-            <div class="footer__copyright-text">Copyright © 2012-2013 cssauthor.com</div>
+            <span>Copyright © 2012-2013 cssauthor.com</span>
         </div>
     </footer>
 </body>
