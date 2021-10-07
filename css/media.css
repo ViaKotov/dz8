@@ -1,12 +1,33 @@
 @media only screen and (max-width: 1400px) {
-
+    .width {
+        max-width: 950px;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-
+    .width {
+        max-width: 950px;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 992px) {
+    .width {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    .main__logo .main__product {
+        justify-content: space-between;
+    }
+    .main__logo .main__product .main__product-thumb, .main__logo .main__product .main__product-text {
+        width: 50%;
+    }
+    .main__logo .main__product .main__product-thumb .main__product-img {
+        margin: 0 auto;
+        max-width: 50%;
+        display: block;
+    }
 
 }
 
@@ -88,16 +109,19 @@
         list-style: none;
         background: white;
         border-top: solid 1px #5094f2;
+        text-align: center;
     }
     .header__top .header__nav .header__nav-menu .header__nav-hamburger .header__nav-hamburger-menu .hamburger-li{
         display: inline;
+        
     }
     .header__top .header__nav .header__nav-menu .header__nav-hamburger .header__nav-hamburger-menu .hamburger-li a{
         display: inline-block;
-        padding: 30px 10px;
+        padding: 10px 5px;
         text-transform: capitalize;
         text-decoration: none;
         color: rgb(88, 88, 88);
+        
     }
 
     .header__top .header__nav .header__nav-menu .header__nav-hamburger a:focus + .header__nav-hamburger-menu{
@@ -107,6 +131,10 @@
         display: block;
     }
 
+    .main__blocks .main__block .main__block-logo .main__block-img {
+        max-width: 60%;
+        margin: 0 auto;
+    }
 
     .main__logo .main__product .main__product-text .main__product-title {
         font-size: 16px;
@@ -150,7 +178,7 @@
     }
     .shop__content .shop__container-content .shop__content-thumb {
         padding: 0;
-        width: 75%;
+        width: 50%;
     }
     .shop__content .shop__container-content .shop__content-thumb img{
         margin: 0 auto;
