@@ -15,7 +15,9 @@ body{
 .header__top .header__nav .header__nav-menu .header__nav-li{
     display: inline;
 }
-
+.header__top .header__nav .header__nav-menu .header__nav-hamburger{
+    display: none;
+}
 .header__top .header__nav .header__nav-menu .header__nav-li:not(:last-child){
     padding: 0 15px 0 0;
 }
