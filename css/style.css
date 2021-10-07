@@ -15,9 +15,7 @@ body{
 .header__top .header__nav .header__nav-menu .header__nav-li{
     display: inline;
 }
-.header__top .header__nav .header__nav-menu .header__nav-hamburger{
-    display: none;
-}
+
 .header__top .header__nav .header__nav-menu .header__nav-li:not(:last-child){
     padding: 0 15px 0 0;
 }
@@ -36,7 +34,6 @@ body{
     text-decoration: none;
     border-bottom-color: #5094f2;
 }
-
 
 
 .main__logo{
@@ -69,12 +66,12 @@ body{
     font-size: 20px;
 }
 
-.main__product-button{
+.main__product-form{
     margin: 36px 0 0 0;
 }
 
-.main__logo .main__product a{
-    position: relative;
+.main__logo .main__product .main__product-text  .main__product-button{
+    background: url('./../images/btn_bg.png') no-repeat left 10px center;
     background-color: #5094f2;
     border: none;
     font-size: 24px;
@@ -83,20 +80,9 @@ body{
     color: white;
     cursor: pointer;
     transition: .4s;
-    text-decoration: none;
-}
-.main__logo .main__product a:after{
-    position: absolute;
-    content: '';
-    display: block;
-    top: 5px;
-    left: 7px;
-    background-image: url("../images/btn_bg.png");
-    width: 23px;
-    height: 23px;
 }
 
-.main__logo .main__product a:hover{
+.main__logo .main__product .main__product-text  .main__product-button:hover{
     background-color: #3d72bb;
 }
 
